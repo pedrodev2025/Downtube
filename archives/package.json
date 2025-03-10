@@ -1,0 +1,12 @@
+{
+  "name": "yt-dlp-browser-download",
+  "version": "1.0.0",
+  "description": "Interface para baixar vídeos com yt-dlp diretamente no navegador",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
