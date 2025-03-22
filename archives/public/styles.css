@@ -52,10 +52,15 @@ input[type="text"]:focus {
     border-color: #007bff;
 }
 
-/* Botão de download */
+/* Botões */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 button {
     padding: 12px 24px;
-    margin-top: 20px;
     border: none;
     background-color: #007bff;
     color: white;
@@ -64,6 +69,7 @@ button {
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    flex: 1;
 }
 
 button:hover {
