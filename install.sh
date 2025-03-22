@@ -7,5 +7,6 @@ cd /archives
 sudo apt install python3
 sudo apt install python3-pip
 sudo npm install express
-sudo npm start
+sudo npm install pm2 
+sudo pm2 start server.js
 echo O Servidor Foi Iniciado Acesse Com a Porta 3000!
