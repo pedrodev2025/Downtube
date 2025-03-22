@@ -3,7 +3,7 @@ sudo apt update
 sudo apt install nodejs npm
 wget https://github.com/pedrodev2025/Downtube/archive/refs/tags/1.1.zip 
 unzip 1.1.zip
-cd /Downtube-1.1
+cd /Downtube-1.1/archives
 sudo apt install python3
 sudo apt install python3-pip
 sudo npm install express
