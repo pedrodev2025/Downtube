@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downtube</title>
+    <title>Baixar Vídeos com yt-dlp</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Downtube</h1>
+        <h1>Baixar Vídeos do YouTube</h1>
         <input type="text" id="videoUrl" placeholder="Cole a URL do vídeo aqui">
-        <button id="downloadBtn">Baixar Vídeo</button>
+        <div class="buttons">
+            <button id="downloadToServer">Baixar para o Servidor</button>
+            <button id="downloadToDevice">Baixar para o Dispositivo</button>
+        </div>
         <p id="status"></p>
     </div>
     <script src="script.js"></script>
