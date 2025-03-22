@@ -1,7 +1,7 @@
 {
-  "name": "yt-dlp-browser-download",
-  "version": "1.0.0",
-  "description": "Interface para baixar vídeos com yt-dlp diretamente no navegador",
+  "name": "Downtube",
+  "version": "1.1.1",
+  "description": "Interface para baixar vídeos com yt-dlp",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
