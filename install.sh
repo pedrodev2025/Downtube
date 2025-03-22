@@ -5,7 +5,8 @@ wget https://github.com/pedrodev2025/Downtube/archive/refs/tags/1.1.zip
 unzip 1.1.zip
 cd /Downtube-1.1/archives
 sudo apt install python3
-sudo apt install python3-pip
+sudo apt install python3-pip 
+sudo pip intall --break-system-packages yt-dlp
 sudo npm install express
 sudo npm install pm2 
 sudo pm2 start server.js
