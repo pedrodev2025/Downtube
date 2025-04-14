@@ -6,7 +6,7 @@ RUN git clone https://github.com/pedrodev2025/Downtube.git
 WORKDIR /Downtube/archives
 # Instalar as dependencias 
 RUN apk add --no-cache python3 py3-pip
-RUN  pip intall --break-system-packages yt-dlp
+RUN  pip install --break-system-packages yt-dlp
 RUN npm install --production
 
 VOLUME /Downtube
