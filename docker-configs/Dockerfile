@@ -15,7 +15,7 @@ VOLUME /Downtube
 
 # Comando para iniciar a aplicação usando PM2
 #CMD ["pm2-runtime", "start", "ecosystem.config.js", "--no-daemon"]
-WORKDIR /Downtube
+WORKDIR /Downtube/node_modules
 # (Opcional) Arquivo de configuração do PM2 (ecosystem.config.js)
 # Se você já tem um, certifique-se de copiá-lo.
 # Caso contrário, você pode iniciar seu script principal diretamente:
