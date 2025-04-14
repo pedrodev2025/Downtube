@@ -1,28 +1,19 @@
-# Use uma imagem base do Node.js com suporte ao PM2
 FROM node:18-alpine
 RUN rm -rf /root/.npm
 RUN apk add --no-cache git
 RUN git clone https://github.com/pedrodev2025/Downtube.git
-WORKDIR /Downtube/archives
-# Instalar as dependencias 
+WORKDIR /Downtube
+# Instalar as dependencias
 RUN apk add --no-cache python3 py3-pip
-RUN  pip install --break-system-packages yt-dlp
-RUN npm install express pm2 express
+RUN pip install --break-system-packages yt-dlp
+RUN npm install express pm2
 
-VOLUME /Downtube
+VOLUME /Downtube/archives/downloads # Assumindo que os downloads ficam aqui
 
-# Exponha a porta que seu servidor Express está ouvindoEXPOSE 3000
-
-# Comando para iniciar a aplicação usando PM2
-#CMD ["pm2-runtime", "start", "ecosystem.config.js", "--no-daemon"]
-WORKDIR /Downtube/node_modules
-# (Opcional) Arquivo de configuração do PM2 (ecosystem.config.js)
-# Se você já tem um, certifique-se de copiá-lo.
-# Caso contrário, você pode iniciar seu script principal diretamente:
- CMD ["pm2-runtime", "start", "server.js", "--no-daemon"]
-# Exponha a porta que seu servidor Express está ouvindo
 EXPOSE 3000
 
+# Comando para iniciar a aplicação usando PM2
+CMD ["node_modules/pm2/bin/pm2-runtime", "start", "archives/server.js", "--no-daemon"]
 
 
 
