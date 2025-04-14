@@ -1,5 +1,6 @@
 # Use uma imagem base do Node.js com suporte ao PM2
 FROM node:18-alpine
+RUN rm -rf /root/.npm
 RUN apk add --no-cache git 
 RUN git clone https://github.com/pedrodev2025/Downtube.git  
 WORKDIR /Downtube/archives
