@@ -7,7 +7,7 @@ WORKDIR /Downtube/archives
 # Instalar as dependencias 
 RUN apk add --no-cache python3 py3-pip
 RUN  pip install --break-system-packages yt-dlp
-RUN npm install --production
+RUN npm install express pm2 express
 
 VOLUME /Downtube
 
