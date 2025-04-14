@@ -1,15 +1,15 @@
 # Use uma imagem base do Node.js com suporte ao PM2
 FROM node:18-alpine
 RUN rm -rf /root/.npm
-RUN apk add --no-cache git 
-RUN git clone https://github.com/pedrodev2025/Downtube.git  
+RUN apk add --no-cache git
+RUN git clone https://github.com/pedrodev2025/Downtube.git
 WORKDIR /Downtube/archives
 # Instalar as dependencias 
 RUN apk add --no-cache python3 py3-pip
-RUN  pip intall --break-system-packages yt-dlp 
+RUN  pip intall --break-system-packages yt-dlp
 RUN npm install --production
 
-
+VOLUME /Downtube
 
 # Exponha a porta que seu servidor Express está ouvindoEXPOSE 3000
 
@@ -22,4 +22,23 @@ RUN npm install --production
  CMD ["pm2-runtime", "start", "server.js", "--no-daemon"]
 # Exponha a porta que seu servidor Express está ouvindo
 EXPOSE 3000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
