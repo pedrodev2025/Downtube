@@ -9,16 +9,14 @@ verifica_erro() {
 sudo apt update
 verifica_erro
 
-sudo apt install -y wget nodejs npm
+sudo apt install -y git nodejs npm
 verifica_erro
 
-wget https://github.com/pedrodev2025/Downtube/archive/refs/tags/1.1.zip
+git clone https://github.com/pedrodev2025/Downtube.git
 verifica_erro
 
-unzip 1.1.zip
-verifica_erro
 
-cd Downtube-1.1/archives # Assumindo que o diretório é apenas Downtube-1.1
+cd Downtube/archives # Assumindo que o diretório é apenas Downtube-1.1
 verifica_erro
 
 sudo apt install -y python3 python3-pip
