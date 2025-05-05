@@ -19,10 +19,10 @@ verifica_erro
 cd Downtube/archives # Assumindo que o diretório é apenas Downtube-1.1
 verifica_erro
 
-sudo apt install -y python3 python3-pip
+sudo apt install -y python3 
 verifica_erro
 
-sudo pip install --break-system-packages yt-dlp # Cuidado com esta opção
+sudo apt install yt-dlp# Cuidado com esta opção
 verifica_erro
 
 npm install express
