@@ -22,7 +22,7 @@ verifica_erro
 sudo apt install -y python3 
 verifica_erro
 
-sudo apt install yt-dlp# Cuidado com esta opção
+sudo apt install yt-dlp -y # Cuidado com esta opção
 verifica_erro
 
 npm install express
