@@ -78,4 +78,4 @@ MIT
 
 ---
 
-**Observação:** O script `install.sh` assume um ambiente baseado em Debian/Ubuntu para os comandos `apt`. Para outras distribuições Linux (como Arch Linux, que você mencionou anteriormente), os comandos de instalação de pacotes podem precisar ser ajustados (por exemplo, `pacman` em vez de `apt`).
+**Observação:** O script `install.sh` assume um ambiente baseado em Debian/Ubuntu para os comandos `apt`. Para outras distribuições Linux (como Arch Linux), os comandos de instalação de pacotes podem precisar ser ajustados (por exemplo, `pacman` em vez de `apt`).
