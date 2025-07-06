@@ -1,0 +1,20 @@
+{
+  "name": "downtube",
+  "version": "1.1.0",
+  "description": "Um downloader de vídeos do YouTube minimalista, simples e rápido.",
+  "main": "archives/server.js",
+  "scripts": {
+    "start": "node archives/server.js"
+  },
+  "keywords": [
+    "youtube",
+    "downloader",
+    "node.js",
+    "express"
+  ],
+  "author": "Pedro Lucas",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
