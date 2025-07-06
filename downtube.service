@@ -1,0 +1,15 @@
+[Unit]
+Description=Downtube
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/share/downtube # O diretório onde o comando será executado
+ExecStart=/usr/bin/node server.js # O comando a ser executado
+Restart=on-failure # Reinicia o serviço se ele sair com erro ou for morto
+RestartSec=5s # Espera 5 segundos antes de tentar reiniciar
+
+
+
+[Install]
+WantedBy=multi-user.target
